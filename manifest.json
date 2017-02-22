@@ -1,0 +1,39 @@
+{
+  "manifest_version": 2,
+  "name": "History Override",
+  "version": "1.0",
+
+  "browser_action": {
+      "default_title": "Override History",
+      "default_icon":"face.png"
+
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+
+  "permissions": [
+    "activeTab",
+    "<all_urls>"
+  ],
+
+
+  "web_accessible_resources": [
+
+ ],
+
+
+ "chrome_url_overrides" : {
+  "history": "newHistory.html"
+},
+
+  "permissions": [
+       "history",
+       "tts"
+     ]
+
+
+
+}
